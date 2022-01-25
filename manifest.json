@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "Delfi Banner Remover",
+	"description": "Removes banners and autoclicks annoying pop ups.",
+	"version": "2.0",
+	"icons": {
+		"16": "user-icon_16.png",
+		"48": "user-icon_48.png"
+	},
+	"content_scripts": [
+	{ 
+		"run_at" :"document_start",
+		"matches": ["https://*.delfi.ee/*"],
+		"js": ["autorunDelfi.js"] 
+	}
+],
+	"browser_action": {
+		"default_icon": "user-icon_16.png",
+		"default_title": "Remove banners"
+	}
+}
