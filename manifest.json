@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 
 	"name": "Delfi Banner Remover",
 	"description": "Removes banners and autoclicks annoying pop ups.",
@@ -15,7 +15,7 @@
 		"js": ["autorunDelfi.js"] 
 	}
 ],
-	"browser_action": {
+	"action": {
 		"default_icon": "user-icon_16.png",
 		"default_title": "Remove banners"
 	}
